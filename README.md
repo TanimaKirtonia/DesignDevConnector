@@ -1,1 +1,1 @@
-Design for web application DevConnector.
+Design for web application Stray Pawsitive.
