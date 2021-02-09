@@ -1,4 +1,4 @@
-$primary-color: #acf390;
+$primary-color: #17a2b8; // #acf390;
 $dark-color: #343a40;
 $light-color: #f4f4f4;
 $danger-color: #dc3545;
@@ -17,4 +17,26 @@ $max-width: 1100px;
 @mixin set-background($color) {
 	background-color: $color;
 	color: set-text-color($color);
+}
+
+
+//margin and padding
+$spaceamounts = (1,2,3,4,5);
+@each $space in $spaceamounts{
+	//allaround margin
+	.m-#{$space}{
+		margin: #{$space}rem;
+	}
+	//vertical margin
+	.my-#{$space}{
+		margin: #{$space}rem 0;
+	}
+	//allaround padding
+	.p-#{$space}{
+		padding: #{$space}rem;
+	}
+	//vertical padding
+	.py-#{$space}{
+		margin: #{$space}rem 0;
+	}
 }
